@@ -6,14 +6,12 @@
     <title>Aula 02 Realidade Aumentada</title>
     <script src="https://aframe.io"></script>
     <script src="https://jsdelivr.net"></script>
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 </head>
 <body>
     <h1>Teste WebAR - Aula 02</h1>
     <p>Se esta página apareceu no celular, o GitHub Pages está funcionando corretamente.</p>
 
-  <a-scene mindar-image="imageTargetSrc: ./card.mind;" 
+    <a-scene mindar-image="imageTargetSrc: ./card.mind;" 
              vr-mode-ui="enabled: false" 
              device-orientation-permission-ui="enabled: false">
         
@@ -22,13 +20,6 @@
         
             <a-box position="0 0 0.25" rotation="0 0 0" scale="0.5 0.5 0.5" material="color: blue;"></a-box>
         
-    </a-scene>
-
-    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-      <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane color="blue" opaciy="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-      </a-entity>
     </a-scene>
 </body>
 </html>
