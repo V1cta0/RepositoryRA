@@ -1,14 +1,26 @@
-KIDOCTYPE fitm
-<html lang="pt-BR>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale-1.0">
-<title>Aula 02 Realidade Aumentada/title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 Realidade Aumentada</title>
+    <script src="https://aframe.io"></script>
+    <script src="https://jsdelivr.net"></script>
 </head>
 <body>
-<h1>Teste WebAR- Aula 02</h1>
-Se esta página apareceu no celular, o GitHub Pages
-esta funcionando corretamente.
-</p>
+    <h1>Teste WebAR - Aula 02</h1>
+    <p>Se esta página apareceu no celular, o GitHub Pages está funcionando corretamente.</p>
+
+  <a-scene mindar-image="imageTargetSrc: ./card.mind;" 
+             vr-mode-ui="enabled: false" 
+             device-orientation-permission-ui="enabled: false">
+        
+        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+        
+        
+            <!-- Um cubo 3D que aparecerá em cima do seu marcador -->
+            <a-box position="0 0 0.25" rotation="0 0 0" scale="0.5 0.5 0.5" material="color: blue;"></a-box>
+        
+    </a-scene>
 </body>
 </html>
